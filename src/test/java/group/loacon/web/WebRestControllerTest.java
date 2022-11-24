@@ -13,15 +13,15 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 class WebRestControllerTest {
-    @Autowired
-    private TestRestTemplate restTemplate;
-
-    @Test
-    public void Profile확인 () {
-        //when
-        String profile = this.restTemplate.getForObject("/profile", String.class);
-
-        //then
-        assertThat(profile).isEqualTo("local");
-    }
+//    @Autowired
+//    private TestRestTemplate restTemplate;
+//
+//    @Test
+//    public void Profile확인 () {
+//        //when
+//        String profile = this.restTemplate.getForObject("/profile", String.class);
+//
+//        //then
+//        assertThat(profile).isEqualTo("local");
+//    }
 }
